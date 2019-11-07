@@ -39,8 +39,8 @@ To train a model with downloaded dataset:
 
 To test with an existing model:
 
-    $ python main.py --dataset mnist --input_height=28 --output_height=28
-    $ python main.py --dataset celebA --input_height=108 --crop
+    $ python main.py --dataset mnist --input_height=28 --output_height=28 --visualize true
+    $ python main.py --dataset celebA --input_height=108 --crop --visualize true
 
 Or, you can use your own dataset (without central crop) by:
 

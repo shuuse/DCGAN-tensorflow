@@ -8,19 +8,23 @@
 - [pillow](https://github.com/python-pillow/Pillow)
 - opencv
 
-## Usage
+## Download dataset:
 
 First, download dataset with:
 
     $ python download.py mnist celebA
 
+## Training:
 To train a model with downloaded dataset:
 
     $ python main.py --dataset celebA --input_height=108 --train --crop --out_name='mytrainingfolder'
 
+## Test the results:
 To test the results with a trained model:
 
     $ python main.py --dataset celebA --input_height=108 --crop --visualize true --out_name='mytrainingfolder'
+
+This will start to generate image files in the sample directory under your training folder. Stop the code, and check out the files.
 
 ## Alterations: 
 

@@ -30,6 +30,7 @@ This will start to generate image files in the sample directory under your train
 
 ### Learning rate:
 To change the learning rate, replacing the learning rate with your chosen value:
+
     $ python main.py --learning_rate='0.0002' --dataset celebA --input_height=108 --train --crop  --out_name='mytrainingfolder'
  
 ### Double generator update: 

@@ -1,5 +1,4 @@
-# Code used for my SCI52 assignment
-
+# DCGAN - Face generation
 
 ## Prerequisites
 
@@ -17,21 +16,21 @@ First, download dataset with:
 
 To train a model with downloaded dataset:
 
-    $ python main.py --dataset celebA --input_height=108 --train --crop --out_name="mytrainingfolder"
+    $ python main.py --dataset celebA --input_height=108 --train --crop --out_name='mytrainingfolder'
 
-To test with an existing model:
+To test the results with a trained model:
 
-    $ python main.py --dataset celebA --input_height=108 --crop --visualize true --out_name="mytrainingfolder"
+    $ python main.py --dataset celebA --input_height=108 --crop --visualize true --out_name='mytrainingfolder'
 
+## Alterations: 
 
-## Online Demo (Taehoon Kim's page)
+### Learning rate:
+To change the learning rate, replacing the learning rate with your chosen value:
+ $ python main.py --learning_rate='0.0002' --dataset celebA --input_height=108 --train --crop  --out_name='mytrainingfolder'
+ 
+### Double generator update: 
+To remove the alteration added by Kim, comment out lines 288-290 in the file "model.py" and run the training again.
 
-[<img src="https://raw.githubusercontent.com/carpedm20/blog/master/content/images/face.png">](http://carpedm20.github.io/faces/)
-
-[link](http://carpedm20.github.io/faces/)
-
-
-
-## Author
+## Original code author
 
 Taehoon Kim / [@carpedm20](http://carpedm20.github.io/)
